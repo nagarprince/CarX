@@ -1,5 +1,5 @@
 // src/data/carsData.js
-import tataSierraImg from "./assets/CarsPhotos/TataSIara.avif";
+import tataSierraImg from "./assets/CarsPhotos/TataSiara.avif";
 import venueImg from "./assets/CarsPhotos/venue.jpg";
 import tharImg from "./assets/CarsPhotos/Thar.avif";
 import nexonImg from "./assets/CarsPhotos/tataNexon.avif";
