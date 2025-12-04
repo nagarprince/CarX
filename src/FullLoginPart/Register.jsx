@@ -28,7 +28,7 @@ function RegisterWithVerify() {
     }
 
     try {
-      const res = await fetch("http://localhost:8080/register/init", {
+      const res = await fetch("https://carxserver-production.up.railway.app/register/init", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password }),
@@ -56,7 +56,7 @@ function RegisterWithVerify() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:8080/register/confirm", {
+      const res = await fetch("https://carxserver-production.up.railway.app/register/confirm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, code: verifyCode }),

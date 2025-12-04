@@ -11,7 +11,7 @@ export default function ProtectedRoute({ children }) {
     async function checkSession() {
       try {
         // Use only this backend endpoint now
-        const res = await fetch("http://localhost:8080/api/session", {
+        const res = await fetch("https://carxserver-production.up.railway.app/api/session", {
           method: "GET",
           credentials: "include",
           mode: "cors",

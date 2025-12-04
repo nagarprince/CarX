@@ -4,7 +4,7 @@ function Logout() {
   useEffect(() => {
     (async () => {
       try {
-        await fetch("http://localhost:8080/logout", {
+        await fetch("https://carxserver-production.up.railway.app/logout", {
           method: "POST",
           credentials: "include",
           mode: "cors"

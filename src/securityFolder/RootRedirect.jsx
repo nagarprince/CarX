@@ -8,7 +8,7 @@ function RootRedirect() {
   useEffect(() => {
     async function check() {
       try {
-        const res = await fetch("http://localhost:8080/api/session", {
+        const res = await fetch("https://carxserver-production.up.railway.app/api/session", {
           credentials: "include",
           mode: "cors",
         });

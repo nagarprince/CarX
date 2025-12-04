@@ -28,7 +28,7 @@ function Login() {
       }
 
       try {
-        const res = await fetch("http://localhost:8080/api/session", {
+        const res = await fetch("https://carxserver-production.up.railway.app/api/session", {
           credentials: "include",
           mode: "cors"
         });
@@ -53,7 +53,7 @@ function Login() {
 
     setSubmitting(true);
     try {
-      const res = await fetch("http://localhost:8080/login", {
+      const res = await fetch("https://carxserver-production.up.railway.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -124,7 +124,7 @@ function Login() {
         </form>
 
         <a
-          href="http://localhost:8080/oauth2/authorization/google"
+          href="https://carxserver-production.up.railway.app/oauth2/authorization/google"
           className="mt-4 flex items-center justify-center gap-3 w-full py-3 rounded-lg bg-white border text-gray-700 shadow-sm hover:shadow-md transition"
         >
           <img src={googleImg || fallbackImg} alt="google" className="w-6 h-6" />

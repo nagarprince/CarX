@@ -21,7 +21,7 @@ function SearchResultPage() {
         setLoading(true);
         setError(null);
 
-        const url = `http://localhost:8080/api/db-cars/search?q=${encodeURIComponent(
+        const url = `https://carxserver-production.up.railway.app/api/db-cars/search?q=${encodeURIComponent(
           query
         )}`;
         console.log("Fetching:", url);
